@@ -3,21 +3,18 @@ package com.ning4256;
 public class Test07 {
     public int reverse(int x) {
         int res = 0;
+
         while (x != 0) {
-            //每次取末尾数字
-            int tmp = x % 10;
-            //判断是否 大于 最大32位整数
-            if (res > 214748364 || (res == 214748364 && tmp > 7)) {
+            int newres = 0;
+            newres = (x % 10) + res * 10;
+            if(((newres - (x % 10)) / 10) != res) {
                 return 0;
             }
-            //判断是否 小于 最小32位整数
-            if (res < -214748364 || (res == -214748364 && tmp < -8)) {
-                return 0;
-            }
-            res = res * 10 + tmp;
-            x /= 10;
+            res = newres;
+            x = x / 10;
 
         }
+
         return res;
     }
 
