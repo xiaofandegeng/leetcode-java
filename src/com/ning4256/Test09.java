@@ -2,15 +2,24 @@ package com.ning4256;
 
 public class Test09 {
     public boolean isPalindrome(int x) {
-        if (x < 0 || (x % 10 == 0) && (x != 0)) {
-            return false;
+        if(x < 0) return false;
+
+        int div = 1;
+        int tmp = x;
+        while (tmp / 10 != 0) {
+            div = div * 10;
+            tmp = tmp / 10;
         }
-        int reverseNum = 0;
-        while (x > reverseNum) {
-            reverseNum = reverseNum * 10 + x % 10;
-            x /= 10;
+        while (x != 0) {
+            int right = x % 10;
+            int left = x / div;
+            if(left != right){
+                return false;
+            }
+            x = ((x - left * div) - right) / 10;
+            div = div / 100;
         }
-        return reverseNum == x || x == reverseNum / 10;
+        return true;
 
     }
 }
