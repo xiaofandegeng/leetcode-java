@@ -50,5 +50,4 @@ public class Test15 {
         }
         return left;
     }
-
 }
