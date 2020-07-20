@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1f9998-4954-4ad2-8b44-2a6122da14b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ning4256/Test21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ning4256/Test21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ning4256/Test21.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <workItem from="1594896162508" duration="4284000" />
       <workItem from="1594997662204" duration="2869000" />
       <workItem from="1595017934325" duration="3232000" />
-      <workItem from="1595257226711" duration="1495000" />
+      <workItem from="1595257226711" duration="1929000" />
     </task>
     <servers />
   </component>
