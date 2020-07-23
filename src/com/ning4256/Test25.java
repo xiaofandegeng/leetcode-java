@@ -2,8 +2,9 @@ package com.ning4256;
 
 public class Test25 {
     public ListNode reverseKGroup(ListNode head, int k) {
-        if (head == null)
+        if (head == null) {
             return head;
+        }
 
         ListNode dummy = new ListNode(0);
         ListNode prenode = dummy;
